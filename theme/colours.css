@@ -3,43 +3,8 @@
 Colours and backgrounds for common.css
 -------------------------------------------------------------- */
 
-html, body {
-	color: #536482;
-	background-color: #FFFFFF;
-}
-
-h1 {
-	color: #FFFFFF;
-}
-
-h2 {
-	color: #28313F;
-}
-
-h3 {
-	border-bottom-color: #CCCCCC;
-	color: #115098;
-}
-
-hr {
-	border-color: #FFFFFF;
-	border-top-color: #CCCCCC;
-}
-
-hr.dashed {
-	border-top-color: #CCCCCC;
-}
-
 /* Search box
 --------------------------------------------- */
-
-#search-box {
-	color: #FFFFFF;
-}
-
-#search-box #keywords {
-	background-color: #FFF;
-}
 
 #search-box input {
 	border-color: #0075B0;
@@ -47,15 +12,6 @@ hr.dashed {
 
 /* Round cornered boxes and backgrounds
 ---------------------------------------- */
-.headerbar {
-	background-color: #12A3EB;
-	background-image: url("{T_THEME_PATH}/images/bg_header.gif");
-	color: #FFFFFF;
-}
-
-.navbar {
-	background-color: #cadceb;
-}
 
 .forabg {
 	background-color: #0076b1;
@@ -79,10 +35,6 @@ hr.dashed {
 .post:target h3 a {
 	color: #000000;
 }
-
-.bg1	{ background-color: #ECF3F7; }
-.bg2	{ background-color: #e1ebf2;  }
-.bg3	{ background-color: #cadceb; }
 
 .ucprowbg {
 	background-color: #DCDEE2;
@@ -243,23 +195,6 @@ a:link	{ color: #105289; }
 a:visited	{ color: #105289; }
 a:hover	{ color: #D31141; }
 a:active	{ color: #368AD2; }
-
-/* Links on gradient backgrounds */
-#search-box a:link, .navbg a:link, .forumbg .header a:link, .forabg .header a:link, th a:link {
-	color: #FFFFFF;
-}
-
-#search-box a:visited, .navbg a:visited, .forumbg .header a:visited, .forabg .header a:visited, th a:visited {
-	color: #FFFFFF;
-}
-
-#search-box a:hover, .navbg a:hover, .forumbg .header a:hover, .forabg .header a:hover, th a:hover {
-	color: #A8D8FF;
-}
-
-#search-box a:active, .navbg a:active, .forumbg .header a:active, .forabg .header a:active, th a:active {
-	color: #C8E6FF;
-}
 
 /* Links for forum/topic lists */
 a.forumtitle {

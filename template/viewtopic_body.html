@@ -111,7 +111,7 @@
 <!-- BEGIN postrow -->
 	<!-- IF postrow.S_FIRST_UNREAD --><a id="unread"></a><!-- ENDIF -->
 	<div id="p{postrow.POST_ID}" class="post <!-- IF postrow.S_ROW_COUNT is odd -->bg1<!-- ELSE -->bg2<!-- ENDIF --><!-- IF postrow.S_UNREAD_POST --> unreadpost<!-- ENDIF --><!-- IF postrow.S_POST_REPORTED --> reported<!-- ENDIF --><!-- IF postrow.S_ONLINE and not postrow.S_IGNORE_POST --> online<!-- ENDIF -->">
-		<div class="inner"><span class="corners-top"><span></span></span>
+		<div class="inner">
 
 		<div class="postbody">
 			<!-- IF postrow.S_IGNORE_POST -->
@@ -211,30 +211,15 @@
 		</dl>
 	<!-- ENDIF -->
 
-		<div class="back2top"><a href="#wrap" class="top" title="{L_BACK_TO_TOP}">{L_BACK_TO_TOP}</a></div>
+		<br clear="all" />
 
-		<span class="corners-bottom"><span></span></span></div>
+		</div>
 	</div>
 
 	<hr class="divider" />
 <!-- END postrow -->
 <!-- IF S_QUICK_REPLY -->
 	<!-- INCLUDE quickreply_editor.html -->
-<!-- ENDIF -->
-<!-- IF S_NUM_POSTS > 1 or PREVIOUS_PAGE -->
-	<form id="viewtopic" method="post" action="{S_TOPIC_ACTION}">
-
-	<fieldset class="display-options" style="margin-top: 0; ">
-		<!-- IF PREVIOUS_PAGE --><a href="{PREVIOUS_PAGE}" class="left-box {S_CONTENT_FLOW_BEGIN}">{L_PREVIOUS}</a><!-- ENDIF -->
-		<!-- IF NEXT_PAGE --><a href="{NEXT_PAGE}" class="right-box {S_CONTENT_FLOW_END}">{L_NEXT}</a><!-- ENDIF -->
-		<!-- IF not S_IS_BOT -->
-		<label>{L_DISPLAY_POSTS}: {S_SELECT_SORT_DAYS}</label>
-		<label>{L_SORT_BY} {S_SELECT_SORT_KEY}</label> <label>{S_SELECT_SORT_DIR} <input type="submit" name="sort" value="{L_GO}" class="button2" /></label>
-		<!-- ENDIF -->
-	</fieldset>
-
-	</form>
-	<hr />
 <!-- ENDIF -->
 
 <div class="topic-actions">
@@ -252,8 +237,6 @@
 	<!-- ENDIF -->
 </div>
 
-<!-- INCLUDE jumpbox.html -->
-
 <!-- IF S_TOPIC_MOD -->
 	<form method="post" action="{S_MOD_ACTION}">
 	<fieldset class="quickmod">
@@ -263,9 +246,6 @@
 	</form>
 <!-- ENDIF -->
 
-<!-- IF S_DISPLAY_ONLINE_LIST -->
-	<h3><!-- IF U_VIEWONLINE --><a href="{U_VIEWONLINE}">{L_WHO_IS_ONLINE}</a><!-- ELSE -->{L_WHO_IS_ONLINE}<!-- ENDIF --></h3>
-	<p>{LOGGED_IN_USER_LIST}</p>
-<!-- ENDIF -->
+	<br clear="all" />
 
 <!-- INCLUDE overall_footer.html -->
