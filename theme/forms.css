@@ -258,7 +258,6 @@ fieldset.submit-buttons input {
 
 /* Main message box */
 #message-box {
-	width: 80%;
 }
 
 #message-box textarea {
@@ -275,6 +274,7 @@ fieldset.submit-buttons input {
 #smiley-box {
 	width: 18%;
 	float: right;
+	display: none;
 }
 
 #smiley-box img {
