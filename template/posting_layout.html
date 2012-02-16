@@ -1,10 +1,18 @@
 <!-- INCLUDE overall_header.html -->
 
+<h2 style="margin-top: 0">
+<!-- BEGIN navlinks -->
+<!-- IF navlinks.S_ROW_COUNT>0 -->
+        &raquo;
+<!-- ENDIF -->
+        <a href="{navlinks.U_VIEW_FORUM}">{navlinks.FORUM_NAME}</a>
+<!-- END navlinks -->
 <!-- IF TOPIC_TITLE -->
-	<h2><a href="{U_VIEW_TOPIC}">{TOPIC_TITLE}</a></h2>
-<!-- ELSE -->
-	<h2><a href="{U_VIEW_FORUM}">{FORUM_NAME}</a></h2>
- <!-- ENDIF -->
+	&raquo;
+        <a href="{U_VIEW_TOPIC}">{TOPIC_TITLE}</a>
+<!-- ENDIF -->
+</h2>
+
 
 <!-- IF S_FORUM_RULES -->
 	<div class="rules">

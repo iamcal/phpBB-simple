@@ -1,14 +1,13 @@
 <!-- INCLUDE overall_header.html -->
-<!-- IF U_MCP --><p>[&nbsp;<a href="{U_MCP}">{L_MCP}</a>&nbsp;]</p><!-- ENDIF -->
-<h2><a href="{U_VIEW_FORUM}">{FORUM_NAME}</a></h2>
 
-<!-- IF FORUM_DESC or MODERATORS or U_MCP -->
-<div>
-	<!-- NOTE: remove the style="display: none" when you want to have the forum description on the forum body -->
-	<!-- IF FORUM_DESC --><div style="display: none !important;">{FORUM_DESC}<br /></div><!-- ENDIF -->
-	<!-- IF MODERATORS --><p><strong><!-- IF S_SINGLE_MODERATOR -->{L_MODERATOR}<!-- ELSE -->{L_MODERATORS}<!-- ENDIF -->:</strong> {MODERATORS}</p><!-- ENDIF -->
-</div>
+<h2 style="margin-top: 0">
+<!-- BEGIN navlinks -->
+<!-- IF navlinks.S_ROW_COUNT > 0 -->
+	&raquo;
 <!-- ENDIF -->
+	<a href="{navlinks.U_VIEW_FORUM}">{navlinks.FORUM_NAME}</a>
+<!-- END navlinks -->
+</h2>
 
 <!-- IF S_FORUM_RULES -->
 	<div class="rules">
@@ -204,16 +203,5 @@
 	</div>
 <!-- ENDIF -->
 
-<!-- INCLUDE jumpbox.html -->
-
-<!-- IF S_DISPLAY_ONLINE_LIST -->
-	<h3><!-- IF U_VIEWONLINE --><a href="{U_VIEWONLINE}">{L_WHO_IS_ONLINE}</a><!-- ELSE -->{L_WHO_IS_ONLINE}<!-- ENDIF --></h3>
-	<p>{LOGGED_IN_USER_LIST}</p>
-<!-- ENDIF -->
-
-<!-- IF S_DISPLAY_POST_INFO -->
-	<h3>{L_FORUM_PERMISSIONS}</h3>
-	<p><!-- BEGIN rules -->{rules.RULE}<br /><!-- END rules --></p>
-<!-- ENDIF -->
 
 <!-- INCLUDE overall_footer.html -->
