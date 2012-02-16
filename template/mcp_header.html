@@ -1,12 +1,13 @@
 <!-- INCLUDE overall_header.html -->
 
-<h2>{L_MCP}</h2>
+<h2 style="margin-top: 0">{L_MCP}</h2>
 
-<!-- IF U_MCP -->
+<!-- IF U_MCP && (U_MCP_FORUM || U_MCP_TOPIC || U_MCP_POST) -->
 	<p class="linkmcp">
-		[ <a href="{U_MCP}">{L_MCP}</a><!-- IF U_MCP_FORUM --> | <a href="{U_MCP_FORUM}">{L_MODERATE_FORUM}</a><!-- ENDIF -->
-		<!-- IF U_MCP_TOPIC --> | <a href="{U_MCP_TOPIC}">{L_MODERATE_TOPIC}</a><!-- ENDIF -->
-		<!-- IF U_MCP_POST --> | <a href="{U_MCP_POST}">{L_MODERATE_POST}</a><!-- ENDIF --> ]
+		|
+		<!-- IF U_MCP_FORUM --><a href="{U_MCP_FORUM}">{L_MODERATE_FORUM}</a> |<!-- ENDIF -->
+		<!-- IF U_MCP_TOPIC --><a href="{U_MCP_TOPIC}">{L_MODERATE_TOPIC}</a> |<!-- ENDIF -->
+		<!-- IF U_MCP_POST --><a href="{U_MCP_POST}">{L_MODERATE_POST}</a> |<!-- ENDIF -->
 	</p>
 <!-- ENDIF -->
 
