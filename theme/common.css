@@ -34,6 +34,13 @@ h1 {
 	font-size: 48px;
 }
 
+h1 a,
+h1 a:link,
+h1 a:visited {
+	color: #404040;
+}
+
+
 h2 {
 	/* Forum header titles */
 	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
