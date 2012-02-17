@@ -1,37 +1,35 @@
-/* General Markup Styles
----------------------------------------- */
-
 * {
-	/* Reset browsers default margin, padding and font sizes */
 	margin: 0;
 	padding: 0;
 }
 
 html {
 	font-size: 100%;
-	/* Always show a scrollbar for short pages - stops the jump when the scrollbar appears. non-IE browsers */
 	height: 101%;
 }
 
 body {
-	/* Text-Sizing with ems: http://www.clagnut.com/blog/348/ */
 	font-family: Verdana, Helvetica, Arial, sans-serif;
 	color: #828282;
-	background-color: #FFFFFF;
-	/*font-size: 62.5%;			 This sets the default font size to be equivalent to 10px */
+	background-color: #ffffff;
 	font-size: 10px;
 	margin: 0;
 	padding: 12px 0;
 }
 
 h1 {
-	/* Forum name */
 	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 	margin-right: 200px;
 	color: #404040;
 	margin-top: 15px;
 	font-weight: bold;
-	font-size: 48px;
+	font-size: 56px;
+}
+
+h2.subhead {
+	margin: 0;
+	font-weight: normal;
+	font-size: 14px;
 }
 
 h1 a,
@@ -111,6 +109,27 @@ hr.divider {
 p.right {
 	text-align: right;
 }
+
+
+
+.headerbar {
+	width: 700px;
+	margin: 4px auto;
+	color: #404040;
+	padding: 20px 0;
+}
+
+.navbar {
+	width: 700px;
+	padding: 3px 20px;
+	background-color: #f0f0f0;
+	color: #999;
+	margin: 12px auto;
+	clear: both;
+}
+
+
+
 
 /* Main blocks
 ---------------------------------------- */
@@ -202,27 +221,8 @@ a#logo:hover {
 
 /* Round cornered boxes and backgrounds
 ---------------------------------------- */
-.headerbar {
-	width: 700px;
-	margin: 4px auto;
-	color: #404040;
-	padding: 0 20px;
-}
 
-.navbar {
-	width: 700px;
-	padding: 3px 20px;
-	background-color: #f0f0f0;
-	color: #999;
-	margin: 12px auto;
-	clear: both;
-}
 
-.navbar a,
-.navbar a:link,
-.navbar a:visited {
-	color: #999;
-}
 
 .forabg {
 	background: #b1b1b1 none repeat-x 0 0;
