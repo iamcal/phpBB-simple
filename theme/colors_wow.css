@@ -155,3 +155,11 @@ input.button2,
 div.post-icon span {
 	background: none;
 }
+
+dl.faq dt {
+	color: #F5EBD1;
+}
+
+hr.dashed {
+	border-color: #F5EBD1;
+}
