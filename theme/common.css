@@ -238,13 +238,7 @@ a#logo:hover {
 	clear: both;
 }
 
-.panel {
-	margin-bottom: 4px;
-	padding: 0 10px;
-	background-color: #f3f3f3;
-	color: #3f3f3f;
-}
-
+.panel,
 .post {
 	padding: 8px;
 	margin: 6px 0 0 0;
@@ -255,18 +249,6 @@ a#logo:hover {
 	font-size: 11px;
 	color: #666;
 }
-
-.post:target .content {
-	color: #000000;
-}
-
-.post:target h3 a {
-	color: #000000;
-}
-
-.Xbg1	{ background-color: #f7f7f7;}
-.Xbg2	{ background-color: #f2f2f2; }
-.Xbg3	{ background-color: #ebebeb; }
 
 .rowbg {
 	margin: 5px 5px 2px 5px;
@@ -281,51 +263,8 @@ a#logo:hover {
 	background-color: #eaeaea;
 }
 
-span.corners-top, span.corners-bottom, span.corners-top span, span.corners-bottom span {
-	font-size: 1px;
-	line-height: 1px;
-	display: block;
-	height: 5px;
-	background-repeat: no-repeat;
-}
-
-span.corners-top {
-	background-image: none;
-	background-position: 0 0;
-	margin: 0 -5px;
-}
-
-span.corners-top span {
-	background-image: none;
-	background-position: 100% 0;
-}
-
-span.corners-bottom {
-	background-image: none;
-	background-position: 0 100%;
-	margin: 0 -5px;
-	clear: both;
-}
-
-span.corners-bottom span {
-	background-image: none;
-	background-position: 100% 100%;
-}
-
-.headbg span.corners-bottom {
-	margin-bottom: -1px;
-}
-
-.post span.corners-top, .post span.corners-bottom, .panel span.corners-top, .panel span.corners-bottom, .navbar span.corners-top, .navbar span.corners-bottom {
-	margin: 0 -10px;
-}
-
-.rules span.corners-top {
-	margin: 0 -10px 5px -10px;
-}
-
-.rules span.corners-bottom {
-	margin: 5px -10px 0 -10px;
+span.corners-top, span.corners-bottom {
+	display: none;
 }
 
 /* Horizontal lists
@@ -679,5 +618,26 @@ div.editlink {
 	float: right;
 	font-weight: normal;
 	margin-left: 1em;
+}
+
+
+
+.buttons {
+        float: left;
+        width: auto;
+        height: auto;
+}
+
+.buttons div {
+        float: left;
+        margin: 0 5px 0 0;
+}
+
+.buttons div a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        overflow: hidden;
 }
 

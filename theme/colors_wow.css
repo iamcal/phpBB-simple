@@ -38,10 +38,14 @@ h2.subhead {
 	color: #FFB100;
 }
 
-h2 {
+h2, h3 {
 	padding-bottom: 4px;
 	margin-bottom: 16px;
 	border-bottom: 2px solid #46230E;
+}
+
+h3 {
+	color: #C09A67;
 }
 
 h2,
@@ -56,10 +60,21 @@ h2 a:visited {
 	color: #C09A67;
 }
 
+label,
+dd label {
+	color: #C09A67;
+}
+
 #page-body a,
 #page-body a:link
 #page-body a:visited {
 	color: #FFB100;
+	border-bottom-color: #FFB100;
+}
+
+#page-body a.postlink:hover {
+	background-color: #FFB100;
+	color: #502A17;
 }
 
 .headerbar {
@@ -81,4 +96,62 @@ h2 a:visited {
 
 .topnavbar {
 	margin-top: 0;
+}
+
+.panel,
+.post {
+        border-top: 1px solid #502A17;
+        border-right: 1px solid #24120A;
+        border-bottom: 1px solid #24120A;
+        background-color: #4A2715;
+        font-size: 11px;
+        color: #F5EBD1;
+}
+
+div.posttitle {
+	color: #C09A67;
+	border-bottom-color: #C09A67;
+}
+
+.content {
+	font: normal 12px/1.5 Arial, Verdana, sans-serif;
+        color: #F5EBD1;
+}
+
+.content h2,
+.panel h2 {
+	font-weight: normal;
+	color: #FFB100;
+	padding-bottom: 4px;
+	margin-bottom: 16px;
+	border-bottom: 2px solid #7E3406;
+}
+
+input.button1,
+input.button2,
+.reply-icon,
+.post-icon {
+	border: 1px solid #C34506;
+	background-color: #732208;
+	color: #FFAE00;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	background-image: url("{T_THEME_PATH}/images/btn_bg.gif");
+	height: 24px;
+	line-height: 20px;
+	padding: 0 6px;
+	font-size: 12px;
+}
+
+.buttons {
+	margin-top: 5px;
+}
+
+.buttons div {
+	background-position: 0 0;
+}
+
+div.post-icon span {
+	background: none;
 }

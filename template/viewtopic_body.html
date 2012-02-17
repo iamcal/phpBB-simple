@@ -25,24 +25,6 @@
 
 <div class="topic-actions">
 
-	<div class="buttons">
-	<!-- IF not S_IS_BOT and S_DISPLAY_REPLY_INFO -->
-		<div class="<!-- IF S_IS_LOCKED -->locked-icon<!-- ELSE -->reply-icon<!-- ENDIF -->"><a href="{U_POST_REPLY_TOPIC}" title="<!-- IF S_IS_LOCKED -->{L_TOPIC_LOCKED}<!-- ELSE -->{L_POST_REPLY}<!-- ENDIF -->"><span></span><!-- IF S_IS_LOCKED -->{L_TOPIC_LOCKED_SHORT}<!-- ELSE -->{L_POST_REPLY}<!-- ENDIF --></a></div>
-	<!-- ENDIF -->
-	</div>
-
-	<!-- IF S_DISPLAY_SEARCHBOX -->
-		<div class="search-box">
-			<form method="get" id="topic-search" action="{S_SEARCHBOX_ACTION}">
-			<fieldset>
-				<input class="inputbox search tiny"  type="text" name="keywords" id="search_keywords" size="20" value="{L_SEARCH_TOPIC}" onclick="if(this.value=='{LA_SEARCH_TOPIC}')this.value='';" onblur="if(this.value=='')this.value='{LA_SEARCH_TOPIC}';" />
-				<input class="button2" type="submit" value="{L_SEARCH}" />
-				{S_SEARCH_LOCAL_HIDDEN_FIELDS}
-			</fieldset>
-			</form>
-		</div>
-	<!-- ENDIF -->
-
 	<!-- IF PAGINATION or TOTAL_POSTS -->
 		<div class="pagination">
 			<!-- IF U_VIEW_UNREAD_POST and not S_IS_BOT --><a href="{U_VIEW_UNREAD_POST}">{L_VIEW_UNREAD_POST}</a> &bull; <!-- ENDIF -->{TOTAL_POSTS}
@@ -50,6 +32,7 @@
 		</div>
 	<!-- ENDIF -->
 
+	<br clear="all" />
 </div>
 <div class="clear"></div>
 
@@ -155,7 +138,11 @@
 <div class="topic-actions">
 	<div class="buttons">
 	<!-- IF not S_IS_BOT and S_DISPLAY_REPLY_INFO -->
-		<div class="<!-- IF S_IS_LOCKED -->locked-icon<!-- ELSE -->reply-icon<!-- ENDIF -->"><a href="{U_POST_REPLY_TOPIC}" title="<!-- IF S_IS_LOCKED -->{L_TOPIC_LOCKED}<!-- ELSE -->{L_POST_REPLY}<!-- ENDIF -->"><span></span><!-- IF S_IS_LOCKED -->{L_TOPIC_LOCKED_SHORT}<!-- ELSE -->{L_POST_REPLY}<!-- ENDIF --></a></div>
+	<!-- IF S_IS_LOCKED -->
+		<div class="locked-icon"><a href="{U_POST_REPLY_TOPIC}" title="{L_POST_LOCKED}"><span></span>{L_TOPIC_LOCKED_SHORT}</a></div>
+	<!-- ELSE -->
+		<div class="reply-icon"><a href="{U_POST_REPLY_TOPIC}" title="{L_POST_REPLY}"><span></span>{L_POST_REPLY}</a></div>
+	<!-- ENDIF -->
 	<!-- ENDIF -->
 	</div>
 
@@ -165,6 +152,8 @@
 			<!-- IF PAGE_NUMBER --><!-- IF PAGINATION --> &bull; <a href="#" onclick="jumpto(); return false;" title="{L_JUMP_TO_PAGE}">{PAGE_NUMBER}</a> &bull; <span>{PAGINATION}</span><!-- ELSE --> &bull; {PAGE_NUMBER}<!-- ENDIF --><!-- ENDIF -->
 		</div>
 	<!-- ENDIF -->
+
+	<br clear="all" />
 </div>
 
 <!-- IF S_TOPIC_MOD -->
