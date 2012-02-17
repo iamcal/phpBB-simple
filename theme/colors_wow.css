@@ -1,9 +1,16 @@
 body {
 	background-color: #1A0F08;
+	color: #433A2E;
 }
 
 h1 {
 	margin-top: 45px;
+}
+
+a,
+a:link,
+a:visited {
+	color: #70523D;
 }
 
 h1,
@@ -46,8 +53,14 @@ h2 a:visited {
 
 #page-body {
 	background-color: #341A0F;
+	color: #C09A67;
 }
 
+#page-body a,
+#page-body a:link
+#page-body a:visited {
+	color: #FFB100;
+}
 
 .headerbar {
 	position: relative;
