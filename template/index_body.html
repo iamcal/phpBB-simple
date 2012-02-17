@@ -6,8 +6,12 @@
 		<li>
 			Posts:
 				<a href="{U_SEARCH_UNANSWERED}">Unanswered</a>
-				<!-- IF S_LOAD_UNREADS -->| <a href="{U_SEARCH_UNREAD}">Unread</a><!-- ENDIF -->
-				<!-- IF S_USER_LOGGED_IN -->| <a href="{U_SEARCH_NEW}">New</a><!-- ENDIF -->
+			<!-- IF S_LOAD_UNREADS -->
+				| <a href="{U_SEARCH_UNREAD}">Unread</a>
+			<!-- ENDIF -->
+			<!-- IF S_USER_LOGGED_IN -->
+				| <a href="{U_SEARCH_NEW}">New</a>
+			<!-- ENDIF -->
 				| <a href="{U_SEARCH_ACTIVE_TOPICS}">Active</a>
 		</li>
 	<!-- ENDIF -->
