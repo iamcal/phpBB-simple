@@ -163,3 +163,46 @@ dl.faq dt {
 hr.dashed {
 	border-color: #F5EBD1;
 }
+
+.forumbg {
+	background: none;
+	margin: 16px 0;
+}
+
+li.row,
+li.header {
+	border-top: 0;
+	border-bottom: 1px solid #46230E;
+}
+li.row:hover {
+	background: none;
+}
+ul.topiclist li {
+	color: #C09A67;
+}
+ul.topiclist dd {
+	border-left: 1px solid #46230E;
+}
+li.row:hover dd {
+	border-left: 1px solid #46230E;
+}
+
+li.header dt,
+li.header dd {
+	color: #C09A67;
+}
+
+li.header dd {
+	margin-left: 0;
+}
+
+dl.icon dt {
+	padding-left: 5px;
+	padding-right: 45px;
+}
+
+a.newtopictag {
+	background-color: #1A0F08;
+	padding: 3px;
+	xcolor: #000;
+}

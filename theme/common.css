@@ -641,3 +641,12 @@ div.editlink {
         overflow: hidden;
 }
 
+.topiclist .topictitle {
+	font-size: 17px;
+	font-weight: normal;
+}
+
+.topiclist .topictitle.newstuff {
+	font-size: 21px;
+	font-weight: bold;
+}
