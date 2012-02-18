@@ -129,6 +129,8 @@ div.posttitle {
 
 input.button1,
 input.button2,
+a.button1,
+a.button2,
 .reply-icon,
 .post-icon {
 	border: 1px solid #C34506;
@@ -164,9 +166,14 @@ hr.dashed {
 	border-color: #F5EBD1;
 }
 
-.forumbg {
+.forumbg,
+.forabg {
 	background: none;
 	margin: 16px 0;
+}
+
+ul.forums {
+	background: none;
 }
 
 li.row,
@@ -205,4 +212,8 @@ a.newtopictag {
 	background-color: #1A0F08;
 	padding: 3px;
 	xcolor: #000;
+}
+
+ul.topiclist.forums li dt {
+	padding-top: 5px;
 }
